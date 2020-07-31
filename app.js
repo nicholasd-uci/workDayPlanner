@@ -1,10 +1,15 @@
+// I did this assignment with a group in my class.The comments found in this code are seperate from all other students. 
+
+// this is rendering the page to be ready. 
 $(document).ready(function(){
 
     $(".saveBtn").click(function () {
-        let value = $(this).siblings(".description").val()
-        console.log(value)
-        let time = $(this).parents().attr("id")
 
+        let value = $(this).siblings(".description").val()
+
+        console.log(value)
+
+        let time = $(this).parents().attr("id")
 
         localStorage.setItem(time, value)
     })
@@ -20,6 +25,23 @@ $(document).ready(function(){
     $("#hr5 .description").val(localStorage.getItem("hr5"))
 
 
-    let currentHour = moment().format("h")
+    let currentHour = parseInt(moment().format("h"))
+
+    $(".time-block").each(function () {
+        let timeBlock = parseInt($(this).attr("id"))
+            if(timeBlock === currentHour) {
+
+                $(this).addClass("present")
+
+            } else if (timeBlock > currentHour) {
+
+                $(this).addClass("future")
+
+            } else if (timeBlock < currentHour) {
+                
+                $(this).addClass("past")
+            }
+
+    })
 
 })
