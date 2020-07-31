@@ -28,7 +28,9 @@ $(document).ready(function(){
     let currentHour = parseInt(moment().format("h"))
 
     $(".time-block").each(function () {
+
         let timeBlock = parseInt($(this).attr("id"))
+        
             if(timeBlock === currentHour) {
 
                 $(this).addClass("present")
