@@ -4,7 +4,7 @@ body {
     line-height: 1;
   }
   
-  textarea{
+  .textarea{
     background: transparent;
     border: none;
     resize: none;
@@ -71,8 +71,9 @@ body {
   }
   
   /* My CSS is located below */
+  /* This did not work when I tried to do it with input boxes instead. I slowly figured out that we cannot simply do the task at hand with input tags. We need **textarea tag** instead! */
 
-#tableHeader {
+/* #tableHeader {
     border: solid 2.5px black;
     margin: 5px;
     padding: 5px;
@@ -89,4 +90,4 @@ body {
     box-sizing: content-box;
     border: thin 5px black;
     
-}
+} */
