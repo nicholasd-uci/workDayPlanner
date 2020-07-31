@@ -43,7 +43,7 @@ $(document).ready(function(){
         let timeBlock = parseInt($(this).attr("id"))
 
             // this is the start our agrument!//
-            if(timeBlock === currentHour) {
+            if(timeBlock == currentHour) {
 
                 $(this).addClass("present")
 
