@@ -1,4 +1,4 @@
-// I did this assignment with a group in my class.The comments found in this code are seperate from all other students. 
+// PLEASE BE AWARE!! I did this assignment with a group in my class.The comments found in this code are seperate from all other students. //
 
 // this is rendering the page to be ready. 
 $(document).ready(function(){
@@ -30,7 +30,7 @@ $(document).ready(function(){
     $(".time-block").each(function () {
 
         let timeBlock = parseInt($(this).attr("id"))
-        
+
             if(timeBlock === currentHour) {
 
                 $(this).addClass("present")
