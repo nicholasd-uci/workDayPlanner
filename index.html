@@ -12,7 +12,7 @@
     <!-- some type of .css filing that probably helps with the style page. -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-        <!-- this is a google font link to probably help with the fonts on the page? -->
+    <!-- this is a google font link to probably help with the fonts on the page? -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <!-- This is the style sheet that was given to us. I just connected to the HTML page -->
     <link rel="stylesheet" href="style.css" />
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<!-- this is the header that projects the top 25%T of the page displaying h1 and p tags. -->
+    <!-- this is the header that projects the top 25%T of the page displaying h1 and p tags. -->
     <header class="jumbotron">
         <h1 class="display-3">Work Day Scheduler</h1>
         <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -31,10 +31,10 @@
 
     <div>
 
- <!-- I decided to make div classes surronding all of my text and buttons. I tried an input tab but slowly learned that those do not work that well. in side of a class called container.  -->
+        <!-- I decided to make div classes surronding all of my text and buttons. I tried an input tab but slowly learned that those do not work that well. in side of a class called container.  -->
         <div class="container">
 
-<!-- I made a div a that had an id of hr9 letting the coder know that the day starts here and ends at hr5 {5PM} -->
+            <!-- I made a div a that had an id of hr9 letting the coder know that the day starts here and ends at hr5 {5PM} -->
             <div id="hr9" class="row time-block">
 
                 <!-- this is a div I made for col hour. displaying the time of the slot -->
@@ -49,9 +49,8 @@
                 <!-- closing div tag for hr9 -->
             </div>
 
-            <!-- clodiung div tag for classs container. -->
+            <!-- closing div tag for class container. -->
         </div>
-
         <div class="container">
             <div id="hr10" class="row time-block">
                 <div class="col-md-1 hour">10AM</div>
@@ -59,7 +58,6 @@
                 <button class="btn saveBtn col-md-1" class="save">Post Me</button>
             </div>
         </div>
-
         <div class="container">
             <div id="hr11" class="row time-block">
                 <div AM class="col-md-1 hour">11AM</div>
@@ -67,8 +65,6 @@
                 <button class="btn saveBtn col-md-1" class="save">Post Me</button>
             </div>
         </div>
-        
-
         <div class="container">
             <div id="hr12" class="row time-block">
                 <div class="col-md-1 hour">12AM</div>
@@ -76,7 +72,6 @@
                 <button class="btn saveBtn col-md-1" class="save">Post Me</button>
             </div>
         </div>
-
         <div class="container">
             <div id="hr13" class="row time-block">
                 <div class="col-md-1 hour">1PM</div>
@@ -84,7 +79,6 @@
                 <button class="btn saveBtn col-md-1" class="save">Post Me</button>
             </div>
         </div>
-
         <div class="container">
             <div id="hr14" class="row time-block">
                 <div class="col-md-1 hour">2PM</div>
@@ -92,7 +86,6 @@
                 <button class="btn saveBtn col-md-1" class="save">Post Me</button>
             </div>
         </div>
-
         <div class="container">
             <div id="hr15" class="row time-block">
                 <div class="col-md-1 hour">3PM</div>
@@ -100,7 +93,6 @@
                 <button class="btn saveBtn col-md-1" class="save">Post Me</button>
             </div>
         </div>
-
         <div class="container">
             <div id="hr16" class="row time-block">
                 <div class="col-md-1 hour">4PM</div>
@@ -108,7 +100,6 @@
                 <button class="btn saveBtn col-md-1" class="save">Post Me</button>
             </div>
         </div>
-
         <div class="container">
             <div id="hr17" class="row time-block">
                 <div class="col-md-1 hour">5PM</div>
@@ -120,10 +111,14 @@
     </div>
 
     <!-- below is code that was given from the assignment -->
-    <!-- this link below is the JQ link that provides what ??? * ??? -->
+
+    <!-- this link below is the JQ link that provides the ability to let the HTML be clickable DOC. This is below the HTML BECAUSE it needs to let the HTML render 1st*  -->
+
+    <!-- This link below is the Moment.js File that brings in the ability to  -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- This link below is the Moment.js File that bring what ??? * ??? -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
 
     <!-- I added this scr file from the app.js. This file contains the syntax for the button functions  -->
     <script src="app.js"></script>

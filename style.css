@@ -7,7 +7,7 @@ body {
   }
   
   /* applied to HTML- in the area of textarea rather than the input tag! */
-  .textarea{
+  textarea{
     background: transparent;
     border: none;
     resize: none;

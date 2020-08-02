@@ -41,7 +41,7 @@ $(document).ready(function(){
     function hourUpdater() {
 
         
-        let currentHour = moment().hours();
+        var currentHour = moment().hours();
 
         // we set this let var for timeBlock and we use $(this) again to call the attr of "id" and turn that into an Int by assignment it = parseInt.
         let timeBlock = parseInt($(this).attr("id"))
