@@ -16,46 +16,54 @@ $(document).ready(function(){
         let time = $(this).parents().attr("id")
         // We will use --> $(this )<-- again-- DONE  --
 
-        // HELPHELPthis is the local storage and we are setting ??all items?? in this and finding the time & value of each...??  HELPHELP
+        // this is the local storage and we are setting ??all items?? in this and finding the time & value of each.  -- Local Storage works like "obj". the Key's are (Time & value = the actual HTML)
         localStorage.setItem(time, value)
     })
 
-    // this is the local storage info that it will know what to storage and how to store it appropriately based on its info listen within. 
+    // this is the local storage info that it will know what to storage and how to store it appropriately based on its info listen within. $() --> this is JQ  .val = set value of ID from the local storage
+
+    // 
     $("#hr9 .description").val(localStorage.getItem("hr9"))
     $("#hr10 .description").val(localStorage.getItem("hr10"))
     $("#hr11 .description").val(localStorage.getItem("hr11"))
     $("#hr12 .description").val(localStorage.getItem("hr12"))
-    $("#hr1 .description").val(localStorage.getItem("hr1"))
-    $("#hr2 .description").val(localStorage.getItem("hr2"))
-    $("#hr3 .description").val(localStorage.getItem("hr3"))
-    $("#hr4 .description").val(localStorage.getItem("hr4"))
-    $("#hr5 .description").val(localStorage.getItem("hr5"))
+    $("#hr13 .description").val(localStorage.getItem("hr13"))
+    $("#hr14 .description").val(localStorage.getItem("hr14"))
+    $("#hr15 .description").val(localStorage.getItem("hr15"))
+    $("#hr16 .description").val(localStorage.getItem("hr16"))
+    $("#hr17 .description").val(localStorage.getItem("hr17"))
 
 
     // then we need to set this let to a Var that we can define later for comparsent purposes? // the lower case h means that it will call time in regular time as H will do military time. This is based on the rules of which "moment" you use? 
-    let currentHour = parseInt(moment().format("h"))
-
+    
     // this is our time block arguments. This will let us know if we should use Present / Future / Past. 
     // ** F(x) = X ** //
-    $(".time-block").each(function () {
+    function hourUpdater() {
+
+        
+        let currentHour = moment().hours();
 
         // we set this let var for timeBlock and we use $(this) again to call the attr of "id" and turn that into an Int by assignment it = parseInt.
         let timeBlock = parseInt($(this).attr("id"))
 
             // this is the start our agrument!//
-            if(timeBlock == currentHour) {
+            if(timeBlock < currentHour) {
 
+                $(this).addClass("past")
+
+            } else if (timeBlock === currentHour) {
+
+                $(this).removeClass("past")
                 $(this).addClass("present")
-
-            } else if (timeBlock > currentHour) {
-
-                $(this).addClass("future")
 
             } else {
                 
-                $(this).addClass("past")
+                $(this).removeClass("past")
+                $(this).removeClass("present")
+                $(this).addClass("future")
             }
             // this is the end of our argument \ the end of our function! //
-    })
+    }
+    hourUpdater();
 
 })

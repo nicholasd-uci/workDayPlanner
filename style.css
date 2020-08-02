@@ -43,7 +43,6 @@ body {
   
   /* this is the hour code used in calling which hour to each text area. */
   .hour {
-    background-color: #ffffff;
     color: #000000;
     border-top: 1px dashed #000000;
   }
