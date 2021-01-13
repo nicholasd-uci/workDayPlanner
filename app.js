@@ -1,9 +1,9 @@
-// PLEASE BE AWARE!! I did this assignment with a group in my class.The comments found in this code are seperate from all other students. //S
+// PLEASE BE AWARE!! I did this assignment with a group in my class.The comments found in this code are separate from all other students. //
 
 // this is rendering the page to be ready. 
 $(document).ready(function(){
 
-    // this is the clickable event function that is letting the HTML know that when you click on this button it will run this funtion. --- F(x) = x ---
+    // this is the clickable event function that is letting the HTML know that when you click on this button it will run this function. --- F(x) = x ---
     $(".saveBtn").click(function () {
 
         // this is calling value a Var... and then using JQ to grab $(this) which means when this passes through it do this action === is doing action to sib child (description) and then getting the value of it (val)
@@ -34,7 +34,7 @@ $(document).ready(function(){
     $("#hr17 .description").val(localStorage.getItem("hr17"))
 
 
-    // then we need to set this let to a Var that we can define later for comparsent purposes? // the lower case h means that it will call time in regular time as H will do military time. This is based on the rules of which "moment" you use? 
+    // then we need to set this let to a Var that we can define later for compartment purposes? // the lower case h means that it will call time in regular time as H will do military time. This is based on the rules of which "moment" you use? 
     
     // this is our time block arguments. This will let us know if we should use Present / Future / Past. 
     // ** F(x) = X ** //
