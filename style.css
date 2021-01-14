@@ -79,25 +79,3 @@ body {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
-  
-  /* My CSS is located below */
-  /* This did not work when I tried to do it with input boxes instead. I slowly figured out that we cannot simply do the task at hand with input tags. We need **textarea tag** instead! */
-
-/* #tableHeader {
-    border: solid 2.5px black;
-    margin: 5px;
-    padding: 5px;
-}
-
-
-#putInfo {
-    max-block-size: 50%;
-}
-
-
-#deleteMe {
-    background-color: rgb(248, 114, 114);
-    box-sizing: content-box;
-    border: thin 5px black;
-    
-} */
