@@ -19,9 +19,9 @@
 
 ## LINKS
 
-- [workDayPlanner link](https://nicholasd-uci.github.io/workDayPlanner/)
+- [workDayPlanner Deployed](https://nicholasd-uci.github.io/workDayPlanner/)
 - [GitHub Repo Link](https://github.com/nicholasd-uci/workDayPlanner)
-- [Nicholas Dallas GitHub](https://github.com/nicholasd-uci)
+- [Nicholas Dallas's GitHub](https://github.com/nicholasd-uci)
 
 - - -
 © 2020 NPRD, Nicholas Paul Ruiz Dallas
